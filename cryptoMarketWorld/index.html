@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60 ";>
+    <title>Cryptocurrency Tracker</title>
+    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="https://kit.fontawesome.com/57d3cae907.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  </head>
+<body>
+    <div class="container">
+    <nav>
+        <img src="images\logopng.png" class="logo">
+        <H2>CRYPTO WORLD</H2>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="index.html">  Home</a></li>
+            <li><i class="fa-solid fa-magnifying-glass-chart"></i><a href="exploremore.html"> Charts</a></li>
+            <li><a href="#sat">About Us</a></li>
+            
+            
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Explore 500+ Coins Live Price</h2>
+        <h1>Crypto<br><span>WORLD</span></h1>
+        <a href="exploremore.html" class="btn">EXPLORE MORE COINS</a>
+    </div>
+    <div class="coin-list">
+        <div class="coin">
+        <img src="images/bitcoin.png">
+        <div>
+            <h3>$ <span id="bitcoin"></span></h3>
+            <p>Bitcoin</p>
+        </div>
+    </div>
+    <div class="coin">
+        <img src="images/ethereum.png">
+        <div>
+            <h3>$<span id="ethereum"></span></h3>
+            <p>Ethereum</p>
+        </div>
+    </div>
+    <div class="coin">
+        <img src="images/dogecoin.png">
+        <div>
+            <h3>$<span id="dogecoin"></span></h3>
+            <p>Dogecoin</p>
+        </div>
+    </div>
+</div>
+ </div>
+</div>
+<br>
+
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright">
+    <a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank">
+      <span class="blue-text">Markets</span>
+    </a> by TradingView
+  </div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+(
+ {
+    "symbols" : [
+      { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" },
+      { "proName": "BITSTAMP:ETHUSD", "title": "Ethereum" },
+      { "proName": "FTX:APTUSD", "title": "APT" },
+      { "proName": "CRYPTOCAP:SOL", "title": "Solana" },
+      { "proName": "CRYPTOCAP:DOGE", "title": "Dogecoin" },
+      { "proName": "FTX:SWEATUSD", "title": "Sweatcoin" },
+      { "proName": "BITTREX:MATICUSD", "title": "Matic" },
+      { "proName": "BINANCE:ADAUSDT", "title": "Cardano" },
+      { "proName": "BYBIT:BNBUSDT.P", "title": "BNB" }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "light",
+    "isTransparent": true,
+    "displayMode": "adaptive",
+    "locale": "en"
+  });
+  </script>
+</div>
+
+
+
+
+  <style>
+  .tradingview-widget-copyright{
+    display: none !important;
+}
+</style>
+
+<div class="section" >
+    <div class="cont">
+        <div class="content-section">
+            <div id="sat">
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+            
+            <div class="content">
+                <h3>Hello. I'm a Full Stack  Developer</h3>
+                <p> we create webApps and website using many modern technologies such as javaScript. Proficient in creating user interfaces
+                    .Feel Free to contact us for creating Static Websites. All Social media Links are given below.
+                     </p>
+                <div class="button">
+                    <a href="https://www.linkedin.com/in/himanshu-pal-03b3261b9">Contact Us</a>
+                </div>
+            </div>
+     
+     <div class="social">
+        <a href="https://m.facebook.com/rajatakarjt?_rdr"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/Rajat870?t=LxxL7PGfAhDI68GOljHvnA&s=08"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/rajat_aka_rjt?r=nametag"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/himanshu-pal-03b3261b9"><i class="fab fa-linkedin"></i></a>
+    </div></div>
+</div>
+<div class="image-section">
+    <img src="images\rjtlogo.jpg">
+</div>
+</div>
+<script src="script.js"></script>        
+</body>
+</html>

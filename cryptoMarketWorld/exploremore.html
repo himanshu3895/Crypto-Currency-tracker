@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exporemore.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- <meta http-equiv="refresh" content="10 ";> -->
+    <title>Cryptocurrency Tracker</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <img src="images\logopng.png" class="logo">
+            <H2>CRYPTO WORLD </H2>
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="index.html"> Home</a></li>
+            <li><i class="fa-solid fa-magnifying-glass-chart"></i><a href="exploremore.html"> Charts</a></li>
+            <li><a href="index.html">About Us</a></li>
+               
+            </ul>
+        </nav>
+        <h4> Scroll And Explore Live Prices of 500 + Cryptocoins </h4>
+        <br>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .tradingview-widget-copyright{
+        display: none !important;
+    }
+  </style>
+  <!-- TradingView Widget END -->
+</body>

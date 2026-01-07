@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0 7%;
+  color: #fff;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+nav h2 {
+  color: #f1951c;
+}
+
+.logo {
+  width: 70px;
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container ul li:hover {
+  background: #ff960b;
+  border-radius: 20px;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+}
+
+nav .btn {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+/* Hero section */
+.content {
+  margin-top: 12%;
+}
+
+.content h1 {
+  font-size: 88px;
+  margin-bottom: 10px;
+}
+
+.content h1 span {
+  color: #ff960b;
+}
+
+.content .btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ff960b;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+}
+
+/* Coin list */
+.coin-list {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 0 15px;
+  color: #ff960b;
+  border: 1px solid #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+.coin img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.coin h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* About Us */
+.section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ddd;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-section,
+.image-section {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+/* Image styles */
+.image-section img {
+  width: 120px;
+  height: auto;
+  border-radius: 20%;
+  margin: 0 auto;
+}
+
+/* Desktop layout */
+@media (min-width: 769px) {
+  .content-section {
+    flex: 1 1 70%;
+    text-align: left;
+  }
+
+  .image-section {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-section img {
+    max-width: 180px;
+  }
+}
+
+.content-section .title {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.content-section .content h3 {
+  margin-top: 20px;
+  color: #ffa600;
+  font-size: 21px;
+}
+
+.content-section .content p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.content-section .content .button {
+  margin-top: 30px;
+}
+
+.content-section .content .button a {
+  background-color: #3d3d3d;
+  padding: 12px 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover {
+  background-color: #250868;
+  color: #fff;
+}
+
+.content-section .social {
+  margin: 40px 10px;
+}
+
+.content-section .social i {
+  color: #f1970e;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+.content-section .social i:hover {
+  color: #250868;
+}
+
+/* Explore more */
+.exploremore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* Coin price cards */
+.container .coin-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgb(22, 6, 6);
+  margin: 7px;
+}
+
+.container .coin-price .logo {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.container .coin-price .logo img {
+  width: 100%;
+}
+
+.container .coin-price div {
+  display: block;
+}
+
+.container .coin-price div h1 {
+  font-size: 20px;
+}
+
+/* =========================
+   RESPONSIVE STYLES CLEAN
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .content h1 {
+    font-size: 60px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  /* Navbar: logo + links inline */
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; /* everything aligned left */
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  /* Hide text, keep logo small */
+  nav h2 {
+    display: none;
+  }
+  .logo {
+    width: 40px;
+    margin: 0;
+  }
+
+  /* Nav links in a row */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+  }
+
+  nav ul li {
+    margin: 0;
+    list-style: none;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    white-space: nowrap; /* "About Us" stays one line */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Hero */
+  .content {
+    margin-top: 20%;
+    text-align: center;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+  .content .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  /* About Us images smaller */
+  .image-section img {
+    max-width: 120px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  nav ul li a {
+    font-size: 12px;
+  }
+  .content h1 {
+    font-size: 32px;
+  }
+  .content-section .content p {
+    font-size: 14px;
+  }
+  .coin {
+    padding: 15px;
+  }
+}
+
+/* Images always responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* About Us Section Fix */
+.content-section {
+  max-width: 1000px;      /* keep content narrow on desktop */
+  margin: 0 auto;         /* center horizontally */
+  padding: 60px 40px;     /* breathing space */
+  text-align: left;       /* normal desktop alignment */
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+  .content-section {
+    padding: 40px 20px;
+    text-align: center;   /* center text for small screens */
+  }
+}
